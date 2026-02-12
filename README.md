@@ -1,7 +1,3 @@
-# take-home-assignment
-
-## Setup Steps
-
 # Playwright Test Framework
 
 A scalable Playwright test framework using the Page Object Model pattern.
