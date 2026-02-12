@@ -14,7 +14,7 @@ await page.getByRole('textbox', { name: 'Password' }).click();
 await page.getByRole('textbox', { name: 'Password' }).fill('A9J7kbYSicRFku9');
 await page.getByRole('button', { name: 'Submit' }).click();
 
-//assert that we are on the right page by checking for the heading of the page
+//assert that user is able to log into account
 await expect(page.getByText('Appointments Book a scan')).toBeVisible();
 });
 
@@ -33,7 +33,7 @@ await page.getByRole('textbox', { name: 'Password' }).click();
 await page.getByRole('textbox', { name: 'Password' }).fill('A9J7kbYSicRFku9');
 await page.getByRole('button', { name: 'Submit' }).click();
 
-//assert that we are on the right page by checking for the Book a scan button
+//assert that we are on the right home page by checking for the Book a scan button
 await expect(page.getByText('Appointments Book a scan')).toBeVisible()
 await expect(page.getByRole('button', { name: 'Book a scan' })).toBeVisible();
 })
@@ -70,7 +70,7 @@ await page.getByRole('textbox', { name: 'Password' }).click();
 await page.getByRole('textbox', { name: 'Password' }).fill('A9J7kbYSicRFku9');
 await page.getByRole('button', { name: 'Submit' }).click();
 
-//assert that we are on the right page by checking for Appointments header and Book a scan button 
+//assert the user is on the home page by checking for Appointments header and Book a scan button 
 await expect(page.getByText('Appointments Book a scan')).toBeVisible()
 await page.getByRole('button', { name: 'Book a scan' }).click();
 await page.getByTestId('select-plan-cancel-btn').click();
