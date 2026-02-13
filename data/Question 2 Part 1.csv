@@ -1,0 +1,7 @@
+Being privacy focused is integral to our culture and business model. Please devise an integration test case that prevents members from accessing other’s medical data.,,
+,,
+https://myezra-staging.ezra.com/medical-questionnaire?direct=true&clearData=true&extraData={%22encounterId%22:%2232bf972e-9a5f-466b-9772-85a9f34d9602%22},,
+,,
+Test Scenario,Expected Results,Actual Results
+Verify authentication for member A's medical questionnaire as authorized member A,200 OK,200 OK
+Verify authentication for member A's medical questionnaire is NOT authorized as member B,403 Forbidden,403 Forbidden

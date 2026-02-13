@@ -1,0 +1,18 @@
+"Please devise HTTP requests from Part 1 to implement your test case. Submitting written HTTP requisitions is fine, you do not need to submit a postman project.",,,
+,,,
+https://myezra-staging.ezra.com/medical-questionnaire?direct=true&clearData=true&extraData=%7B%22encounterId%22:%2232bf972e-9a5f-466b-9772-85a9f34d9602%22%7D,,,
+,,,
+Test Scenario,HTTP requests,Expected Results,Actual Results
+Verify authentication for member A's medical questionnaire is authorized for ONLY member A,"-GET/medical-questionnaire/{%7B%22encounterId%22:%2232bf972e-9a5f-466b-9772-85a9f34d9602%22%7D}
+-PUT/medical-questionnaire/{%7B%22encounterId%22:%2232bf972e-9a5f-466b-9772-85a9f34d9602%22%7D}
+-UPDATE/medical-questionnaire/{%7B%22encounterId%22:%2232bf972e-9a5f-466b-9772-85a9f34d9602%22%7D}
+-DELETE/medical-questionnaire/{%7B%22encounterId%22:%2232bf972e-9a5f-466b-9772-85a9f34d9602%22%7D}",200 OK,"200 OK
+
+Response contains only member A's data"
+,,,
+Verify authentication for member A's medical questionnaire is NOT authorized for member B,"-GET/medical-questionnaire/{%9A%22encounterId%10:%0222ha-123f-000b-9434-85a9f34d999%22%9O}
+-PUT/medical-questionnaire/{%9A%22encounterId%10:%0222ha-123f-000b-9434-85a9f34d999%22%9O}
+-UPDATE/medical-questionnaire/{%9A%22encounterId%10:%0222ha-123f-000b-9434-85a9f34d999%22%9O}
+-DELETE/medical-questionnaire/{%9A%22encounterId%10:%0222ha-123f-000b-9434-85a9f34d999%22%9O}",403 Forbidden,"403 Forbidden
+
+Response is unable to view member B's data"

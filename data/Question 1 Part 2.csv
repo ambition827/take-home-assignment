@@ -1,0 +1,6 @@
+"For the top 3 test cases from part 1, please provide a description explaining why they are indicated as your most important.",,,
+,,,
+Test Scenario,Expected Results,Actual Results,Description explaining why they are indicated as your most important.
+Verify Book a scan button is displayed via Home page,Book a scan button displays on the Home screen in the Appointments section,Displayed is Book a scan button in the Appointments section via the Home screeen,"The user needs the button 'Book a scan' displayed on the homepage in order to start booking a scan, otherwise they are potentially blocked from scheduling anything."
+Verify the page to Select your Scan is displayed,"After clicking Book a scan button, the Select your Scan page is displayed",Displayed is the Select your Scan page,The user is blocked from reviewing any current scan and/or selecting a new scan w/out this page being displayed.
+"Verify on the Select your Scan page, the user is able to cancel and return to the Home page","On the Select your Scan page, clicking the cancel button on the bottom of the page, returns users to the Home page ",Displayed is the Home screen,"The user needs a way to return to the homepage.  User may need/want to review already scheduled appointments, view report, invoices or their accounts before proceeding any further."

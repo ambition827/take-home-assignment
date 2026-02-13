@@ -1,0 +1,26 @@
+"The booking flow is integral to Ezra's business operation. Please go through the first three steps of the booking process including payment and devise 15 test cases throughout the entire process you think are the most important. When submitting the assignment, please return the test cases from the most important to the least important.",,
+UN:,michael.krakovsky+test_interview@functionhealth.com,
+PW:,12121212Aa,
+"Pre Req:
+Access/logged into https://myezra-staging.ezra.com/",,
+Test Scenario,Expected Results,Actual Results
+Verify Book a scan button is displayed via Home page,Book a scan button displays on the Home screen in the Appointments section,Displayed is Book a scan button in the Appointments section via the Home screeen
+Verify the page to Select your Scan is displayed,"After clicking Book a scan button, the Select your Scan page is displayed",Displayed is the Select your Scan page
+"Verify on the Select your Scan page, the user is able to click cancel and return to the Home page","On the Select your Scan page, clicking the cancel button on the bottom of the page, returns users to the Home page ",Displayed is the Home screen
+"Verify on the Select your Scan page, clicking ""here"" To learn more about MRI and CT scans, opens a seperate FAQ's page","On the Select your Scan page, clicking the 'here' button opens up a seperate FAQ's page ",FAQ's page is displayed when 'here' button is clicked
+"Verify on the Select your Scan page, a valid date of birth and sex at birth is required","Required on the Select your Scan page, are valid date of birth and selection via drop-down of sex at birth",No errors will be displayed
+"Verify on the Select your Scan page, the selection of Lungs CT Scan is not enabled for users under 34 years of age","On the Select your Scan page, Selection for Lungs CT Scan is disabled if the users age is under 34 years.",Lungs CT Scan is disabled
+"Verify on the Select your Scan page, the selection of Lungs CT Scan is enabled when a user is over 34 years of age","On the Select your Scan page, Selection for Lungs CT Scan is enabled when a user is over 34 years of age",Lungs CT Scan is enabled
+"Verify on the Select your Scan page, some type of scan is required to continue to reserve your appointment","On the Select your Scan page, a selection of any type of scan is required to for the continue button to be enabled",Continue button is enabled when a selection of any type of scan is selected
+"Verify on the Select your Scan page, after clicking continue button, Schedule your scan page is displayed","On the Select your Scan page, when all required criteria and selections are chosen and the continue button is clicked, Schedule your scan page displays ",Displayed is the schedule your scan page
+"Verify on the Schedule your scan page, the continue button becomes enabled when a location, date/time to book your scan is selected","On the Schedule your scan page, when location, date and time to book your scan is chosen, the continue button becomes enabled","Continue button is enabled when location, date and time to book your scan is selected"
+"Verify on the Schedule your scan page, clicking the continue button, displays the Reserve your appointment page",Clicking the continue button displays the Reserve your appointment page,Reserve your appointment page displays
+"Verify on the Schedule your scan page, all payment methods (CC, Affirm, Bank) can be used successfully and when the continue button is clicked, scan confirm page is displayed","On the Schedule your scan page, all payment methods can be used and the scan confirm page is displayed after clicking the continue button","All payment methods can successfully be used and scan confirm page displays with the following:
+Advising user to complete online medical questionnaire
+Type of Scan:
+Location:
+Date:
+Begin Medical Questionnaire button "
+"Verify on the scan confirm page, user can complete the medical questionnaire and return to dashboard","On the Schedule your scan page, user can complete the questionnaire and return to dashboard",User complete questionnaire and returned to dashboard
+"Verify on the homepage, user is able to reschedule a scan and the update is reflected on the dashboard","On the homepage, user selects a scan to reschedule and the update is reflected on the dashboard",User reschedules the scan and the update is displayed on the dashboard
+"Verify on the homepage, user is able to cancel the scan and the update is reflected on the dashboard","On the homepage, user selects a scan to cancel and the update is reflected on the dashboard",User cancels the scan and the update is displayed on the dashboard

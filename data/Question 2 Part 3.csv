@@ -1,0 +1,5 @@
+"At Ezra, we have over 100 endpoints that transfer sensitive data. What is your thought process around managing the security quality of these endpoints? What are the tradeoffs and potential risks of your solution?"
+
+"My initial thought process around managing the security quality of these endpoints is, a user should never have access to another member's data based on authentication and authorization."
+
+"A tradeoff or potential risks of the solution is if at any given time, a said admin created a role/group that would grant those authentications/authorizations, members included into that newly created role/group would have those privileges to access a members data."
